@@ -127,6 +127,8 @@ public class FlightController {
      * @param ctx the context object handles information HTTP requests and generates responses within Javalin. It will
      *            be available to this method automatically thanks to the app.put method.
      */
+
+     
     private void getAllFlightsDepartingFromCityArrivingToCityHandler(Context ctx) {
         ctx.json(flightService.getAllFlightsFromCityToCity(ctx.pathParam("departure_city"),
                 ctx.pathParam("arrival_city")));
